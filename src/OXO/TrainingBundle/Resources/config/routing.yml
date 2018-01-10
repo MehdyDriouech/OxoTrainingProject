@@ -1,0 +1,38 @@
+oxo_platform_home:
+    path:      /
+    defaults: { _controller: OXOTrainingBundle:Advert:index }
+
+oxo_platform_view:
+    path:      /advert/{id}
+    defaults: { _controller: OXOTrainingBundle:Advert:view }
+
+oxo_platform_add:
+    path:      /add
+    defaults: { _controller: OXOTrainingBundle:Advert:add }
+
+oxo_platform_view_slug:
+    path:      /{year}/{slug}.{format}
+    defaults:
+        _controller: OXOTrainingBundle:Advert:viewSlug
+    requirements:
+        year:   \d{4}
+        format: html|xml
+
+oxo_platform_add:
+    path:      /add
+    defaults:
+        _controller: OXOTrainingBundle:Advert:add
+
+oxo_platform_edit:
+    path:      /edit/{id}
+    defaults:
+        _controller: OXOTrainingBundle:Advert:edit
+    requirements:
+        id: \d+
+
+oxo_platform_delete:
+    path:      /delete/{id}
+    defaults:
+        _controller: OXOTrainingBundle:Advert:delete
+    requirements:
+        id: \d+

@@ -1,0 +1,7 @@
+oxo_training:
+    resource: "@OXOTrainingBundle/Resources/config/routing.yml"
+    prefix:   /platform
+
+app:
+    resource: '@AppBundle/Controller/'
+    type: annotation

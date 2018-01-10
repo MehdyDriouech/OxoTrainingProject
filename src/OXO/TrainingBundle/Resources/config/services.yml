@@ -1,0 +1,4 @@
+services:
+#    oxo_training.example:
+#        class: OXO\TrainingBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]
